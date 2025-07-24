@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLOTHIFY - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(270deg, #e3f2fd, #fce4ec, #fff3e0);
+      background-size: 600% 600%;
+      animation: gradientFlow 30s ease infinite;
+    }
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">👚 CLOTHIFY</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-pink-600">Home</a>
+        <a href="shop.html" class="hover:text-pink-600">Shop</a>
+        <a href="login.html" class="hover:text-pink-600">Login</a>
+        <a href="register.html" class="hover:text-pink-600">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="text-center py-20 px-6">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Clothify</h2>
+    <p class="text-xl mb-6">Trendy fashion for everyone</p>
+    <a href="shop.html" class="bg-pink-600 text-white px-6 py-3 rounded hover:bg-pink-700">Explore Shop</a>
+  </main>
+
+  <footer class="bg-white text-center border-t py-6 mt-12">
+    &copy; 2025 CLOTHIFY. All rights reserved.
+  </footer>
+</body>
+</html>
