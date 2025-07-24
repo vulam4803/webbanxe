@@ -1,24 +1,32 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CLOTHIFY - Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(270deg, #e3f2fd, #fce4ec, #fff3e0);
+      background: linear-gradient(270deg, #f3e5f5, #e1f5fe, #ffe0b2);
       background-size: 600% 600%;
-      animation: gradientFlow 30s ease infinite;
+      animation: gradientFlow 15s ease infinite;
     }
     @keyframes gradientFlow {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
   </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 fade-in">
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
       <h1 class="text-2xl font-bold">👚 CLOTHIFY</h1>
@@ -32,9 +40,10 @@
   </header>
 
   <main class="text-center py-20 px-6">
+    <img src="https://images.unsplash.com/photo-1600180758890-6d4d8e6ed9db?auto=format&fit=crop&w=1200&q=80" alt="Fashion Banner" class="mx-auto rounded shadow-lg mb-10 max-w-4xl">
     <h2 class="text-4xl font-bold mb-4">Welcome to Clothify</h2>
     <p class="text-xl mb-6">Trendy fashion for everyone</p>
-    <a href="shop.html" class="bg-pink-600 text-white px-6 py-3 rounded hover:bg-pink-700">Explore Shop</a>
+    <a href="shop.html" class="bg-pink-600 text-white px-6 py-3 rounded hover:bg-pink-700 shadow-md transform hover:scale-105 transition">Explore Shop</a>
   </main>
 
   <footer class="bg-white text-center border-t py-6 mt-12">
